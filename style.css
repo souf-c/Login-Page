@@ -1,0 +1,170 @@
+/* Twitter @YukiRH1 */
+@import "reset.css";
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffc7c8;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container{
+    width: 80%;
+    margin: 5em auto;
+    background-color: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 50px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 50px -10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 50px -10px rgba(0,0,0,0.75);
+    display: flex;
+    min-height: 80vh;
+}
+.leftContain{
+    width: 50%;
+    background: url(img/bg2.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 3em 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logo img{
+    width: 10%;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 1em;
+}
+.logo a{
+    color: #fff;
+    font-size: 1.4em;
+}
+h1{
+    color: #fff;
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+h3{
+    color: #fff;
+    font-size: 1.3em;
+}
+.line{
+    border-bottom: 1px solid #fff;
+    width: 20%;
+}
+.yoursite p{
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+/* Right side */
+.rightContain{
+    width: 50%;
+    background: url(img/bg1.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    padding: 3em 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.signIn{
+    align-self: flex-start;
+}
+h2{
+    color: #565656;
+    font-size: 2em;
+    font-weight: 700;
+}
+.signIn{
+    display: flex;
+    margin-top: 6em;
+    margin-left: 4em;
+}
+.signIn img{
+    width: 10%;
+    height: 10%;
+}
+input{
+    background-color: #f0f0f0;
+    border: none;
+    padding: 1.3em 2em;
+    display: block;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    width: 100%;
+}
+input:first-child{
+    margin-bottom: 2em;
+}
+::placeholder{
+    color:#9f9f9f;
+
+}
+.btn{
+    display: block;
+    color: #fff;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    padding: 1em 2em;
+    text-align: center;
+}
+.btn-main{
+    background: #ff7d7d;
+    background: -moz-linear-gradient(left, #ff7d7d 0%, #ff9899 100%);
+    background: -webkit-linear-gradient(left, #ff7d7d 0%,#ff9899 100%);
+    background: linear-gradient(to right, #ff7d7d 0%,#ff9899 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7d7d', endColorstr='#ff9899',GradientType=0 );
+}
+.btn-tw{
+    background: #35abd3;
+    background: -moz-linear-gradient(left, #35abd3 0%, #66e3ff 100%);
+    background: -webkit-linear-gradient(left, #35abd3 0%,#66e3ff 100%);
+    background: linear-gradient(to right, #35abd3 0%,#66e3ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35abd3', endColorstr='#66e3ff',GradientType=0 );
+    font-size: .9em;
+    margin-bottom: 2em;
+}
+.btn-fb{
+    background: #287ebb;
+    background: -moz-linear-gradient(left, #287ebb 0%, #3ea3e7 100%);
+    background: -webkit-linear-gradient(left, #287ebb 0%,#3ea3e7 100%);
+    background: linear-gradient(to right, #287ebb 0%,#3ea3e7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#287ebb', endColorstr='#3ea3e7',GradientType=0 );
+    font-size: .9em;
+}
+.rightContain p{
+    font-size: .8em;
+    text-align: center;
+    color: #787878;
+}
+.socials, .btn-main, .inputs{
+    width: 80%;
+}
+@media only screen and (max-width: 990px){
+    .leftContain{
+        display: none;
+    }
+    .rightContain{
+        width: 100%;
+    }
+    .signIn{
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 470px){
+    .rightContain{
+        padding: 1em;
+    }
+}
